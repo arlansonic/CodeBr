@@ -9,5 +9,19 @@ const prod2 = {
     nome: 'Camisa Polo',
     preco: 79.90
 }
-
 console.log(prod2);
+
+const prod4 = {
+    nome: 'Arlan Marreiro',
+    idade: 26
+}
+console.log(prod4);
+
+const prod5 = {
+    nome: 'Maria Katiane Barreto Lopes',
+    idade: 28,
+    rua: 'Professora Elvira Correa'
+}
+console.log(typeof prod5);
+
+
