@@ -24,6 +24,7 @@ const prod5 = {
 }
 console.log(typeof prod5);
 
+<<<<<<< HEAD
 const prod6 = {};
 prod6.nome ='Arlan Marreiro'
 prod6.rua = 'Rua Professora Elvira corrêa'
@@ -31,4 +32,6 @@ prod6.numero = 17
 prod6.cep = ['69088357']
 
 console.log(prod6);
+=======
+>>>>>>> 0d8d77920088fa8ed11af5ab7e2aaf5ce4ef235d
 
