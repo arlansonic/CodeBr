@@ -4,4 +4,5 @@ console.log(soma)
 
 const subtracao = a - b - c -d
 console.log(subtracao)
+
 // ' / ' ' * ' ' % '
