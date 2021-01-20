@@ -9,6 +9,7 @@ fabricantes.forEach(function(fabricante){ //Retornando com função Padrão
     console.log(fabricante)
 }) 
 
+<<<<<<< HEAD
 fabricantes.forEach(fabricante => console.log(fabricante)) // Retornando com Arrow Function
 
 
@@ -26,3 +27,6 @@ empresas.forEach(imprimir)
 empresas.forEach(empresas => {
     return console.log(empresas)
 })
+=======
+fabricantes.forEach(fabricante => console.log(fabricante)) // Retornando com Arrow Function
+>>>>>>> 5cd2be1665e1c64117beabca0f31d204ef145d10
