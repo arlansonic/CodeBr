@@ -15,7 +15,7 @@ function tratarErroElancar(erro){
 
 function imprimirNomeGritado(obj){
     try{
-        console.log(obj.name.toUpperCase() + '!!!') // .topUpperCase() : Maiusculo | .toLowerCase() : Minusculo
+        console.log(obj.nome.toUpperCase() + '!!!') // .topUpperCase() : Maiusculo | .toLowerCase() : Minusculo
     }catch(e){
         tratarErroElancar(e)
     }finally{
@@ -41,7 +41,7 @@ function tratarErroEmandar(erro){
 
 function ImprimirNomeMinusculo(obj2){
     try{
-        console.log(obj2.name.toLowerCase() + ' <- Nome Minusculo')
+        console.log(obj2.nome.toLowerCase() + ' <- Nome Minusculo')
     }catch(e){
         tratarErroEmandar(e)
     }finally{
@@ -49,5 +49,5 @@ function ImprimirNomeMinusculo(obj2){
     }    
 }
 
-const obj2 = {nome: 'WORKSHOP'}
+const obj2 = {nome: 'WORKSHOP'} //Letra em Maiusculo
 ImprimirNomeMinusculo(obj2)

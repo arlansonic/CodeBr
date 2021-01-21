@@ -18,7 +18,7 @@ const obj = { }
 obj.falar = function(){ return 'Opa'}
 console.log(obj.falar())
 
-// Possar função como param
+// Passar função como param
 
 function run(fun){
     fun()
