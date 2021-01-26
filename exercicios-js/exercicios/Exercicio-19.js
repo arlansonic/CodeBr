@@ -15,7 +15,6 @@ comando switch. Crie um caso default para produto não existente
 //  valorEmReais = `R$ ${valorDecimal.toFixed(2).toString().replace(".", ",")}`
 
 function lanchonete(calculo, qtde){
-
     switch(calculo){
         case '100':
             qtde = qtde * 3.00
