@@ -4,6 +4,7 @@ como parâmetros um número n (número de termo), a1 (o primeiro termo) e r (a r
 bem como a soma dos elementos.
 */
 
+<<<<<<< HEAD
 function pA(n, a1, r){
     for(let i= 0; i< n; i++){
         console.log(a1 + r*i)
@@ -23,3 +24,5 @@ pA(10, 10, 20)
 console.log('-----------------------------')
 console.log('SOMA DE PG')
 pG(10, 10, 20)
+=======
+>>>>>>> ffc7c4ab9eceb817e0440f50756a8546fdba0d77
