@@ -69,3 +69,27 @@ console.log('Bancos CS - CSMB: ' + Object.entries(clientesProducao.CS.CSMB))
 Object.entries(clientesProducao.CS.SGDV).forEach(e =>{
     console.log(`${[0]}: ${[1]}`)
 })
+
+console.log('------ Usando  defineProperty --------')
+//Adicionar um parametro dentro de um Objeto
+
+Object.defineProperty(sistemaProducao, 'Docker',{
+    enumerable: true,
+    writable: false,
+    value: 'Docker'
+
+})
+
+console.log(sistemaProducao.Docker)
+console.log(Object.keys(sistemaProducao))
+
+//Object.assign (ECMAScript 2015)
+console.log('Usando *Object.assign* -- Concatenando os objetos passados como parametros como primeiro')
+const lg10 = { a : sistemaProducao.linguagens.lg1}
+const lg20 = { b : sistemaProducao.linguagens.Lg2}
+const lg30 = { c : sistemaProducao.linguagens.Lg3}
+const lg40 = { d : sistemaProducao.linguagens.lg4}
+
+const juntar = Object.assign(lg10, lg20, lg30, lg40)
+
+console.log(juntar)
