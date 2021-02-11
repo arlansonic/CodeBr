@@ -8,6 +8,7 @@ aprovados.forEach(function(nome, indice){
 console.log('-- Usando Arrow Funciton')
 aprovados.forEach(nome => console.log(nome))
 
+
 console.log('-- Jogando o forEach do Array para uma constante --')
 const exibirAprovados = aprovados => console.log(aprovados)
 aprovados.forEach(exibirAprovados)
