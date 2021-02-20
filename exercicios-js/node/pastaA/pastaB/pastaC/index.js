@@ -1,0 +1,1 @@
+this.ola2 = 'Testando Importação INDEX.JS '
