@@ -7,6 +7,9 @@ const alunos = [
 {nome: 'Arlison', nota: 8.7, bolsista: true}
 ]
 
+// Array com a nota dos Alunos
+console.log(alunos.map(a => a.nota))
+
 const resultado = alunos.map(a => a.nota).reduce(function(acumulador, atual){
     console.log(acumulador, atual)
     return acumulador + atual

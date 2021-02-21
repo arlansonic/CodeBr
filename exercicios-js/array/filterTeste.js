@@ -1,3 +1,6 @@
+const { Console } = require("console")
+const { Z_FULL_FLUSH } = require("zlib")
+
 const funcionarios = [
       {
         id: 1,
@@ -1116,6 +1119,15 @@ console.log(funcionarios.filter(function(f){
 
 // Com Arrow Function - Pegando os id < 20
 
-const identificacao = funcionarios => funcionarios.id < 20
-console.log(funcionarios.filter(identificacao))
+// const identificacao = funcionarios => funcionarios.id < 20
+// console.log(funcionarios.filter(identificacao))
+
+//  && f.salario < 1000
+console.log(funcionarios.filter(function(f){
+    if(f.genero == 'F' && f.pais == 'China'){
+        return funcionarios.map(g => g.genero).reduce(function(fem){
+            return fem
+        })
+    }
+}))
 
