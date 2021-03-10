@@ -23,7 +23,7 @@
     <script>
         document.querySelectorAll('a').forEach(link => {
             const conteudo = document.getElementById('conteudo')
-
+            // Usando AJAX
             link.onclick = function(e){
                 e.preventDefault()                
                 fetch(link.href)
