@@ -13,3 +13,5 @@ function mostarNumerosEntre(min, max){
 mostarNumerosEntre(1, 60)
     .then(numX10 => `O Número gerado foi ${numX10}`)
     .then(console.log)
+
+    
