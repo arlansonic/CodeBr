@@ -1,3 +1,9 @@
+* body{
+    display: inline-block;
+    padding: 0;
+    left: 0;
+}
+
 #noticia{
     position: absolute;
     top: 1000px;
@@ -28,4 +34,15 @@ tfoot{
     background-color: #444;
     color: white;
     font-weight: bold;
+}
+
+/* Formulário */
+
+.form input, textarea,select{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=radio],input[type=checkbox]{
+    display: inline;    
 }
