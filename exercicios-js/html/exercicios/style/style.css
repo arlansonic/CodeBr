@@ -76,6 +76,24 @@ input[type=radio],input[type=checkbox]{
     background-color: #444;    
 }
 
-.wm-slider p{
+p{
     position: absolute;
+    display: none;
+}
+
+/* Progresso Vídeo */
+
+.progresso{
+    height: 20px;
+    width: 500px;
+    border: solid 1px #444;
+    margin: 15px;
+}
+
+.progresso > div{
+    background-color: red;
+    color: #fff;
+    height: 100%;
+    font-size: 14px;
+    width: 0%;
 }

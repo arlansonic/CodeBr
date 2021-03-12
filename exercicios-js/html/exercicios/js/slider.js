@@ -3,23 +3,45 @@ function mover(elem, inicio, fim, passo, callback){
     if(novoInicio >= fim) {
         elem.style.left = novoInicio + 'px'
         
-        setTimeout(() => mover(elem, novoInicio, fim, passo, callback), 3)
+        setTimeout(() => mover(elem, novoInicio, fim, passo, callback), 7)
     }else{
         calback()
     }
 }
 
-    // function slider(){
-    //     const elementos = document.querySelectorAll('[wm-slider]')
-    // }
+    function slider(){
+        const elementos = document.querySelectorAll('[wm-slider]')
+        const slides = Array.from(elementos)
+        exibirSlide(slides, slides[0])
+    }
+
+    function exibirSlide(slides, slide){
+        slide.style.display = 'block'
+
+        const inicio = innerWidth
+        const fim = -slide.clienteWidth
+
+        slide.style.left = `${inicio}px` 
+
+        mover(slide, inicio, fim, 5, () =>{
+            slide.style.display = 'none'
+            exibirSlide(slides, getProximo(slides, slide))
+        })
+    }
+
+    function getProximo(lista, atual){
+        const i = lista.indexOf(atual) + 1
+        return i < lista.length ? lista[i] : lista[0]
+    }
     
+    slider()
 
-    const p = document.querySelector('[wm-slider] > p')
-    p.style.display = 'block'
+    // const p = document.querySelector('[wm-slider] > p')
+    // p.style.display = 'block'
 
-    mover(p, 1500, -400, 5, () =>{
-        console.log('Terminou!!')
-    })
+    // mover(p, 1500, -400, 5, () =>{
+    //     console.log('Terminou!!')
+    // })
 
 
 
