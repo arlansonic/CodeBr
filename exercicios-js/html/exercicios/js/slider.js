@@ -1,11 +1,11 @@
 function mover(elem, inicio, fim, passo, callback){
     const novoInicio = inicio - passo
-    if(novoInicio >= fim) {
+    if(novoInicio >= fim) {        
         elem.style.left = novoInicio + 'px'
-        
         setTimeout(() => mover(elem, novoInicio, fim, passo, callback), 7)
+
     }else{
-        calback()
+        callback()
     }
 }
 
@@ -19,7 +19,7 @@ function mover(elem, inicio, fim, passo, callback){
         slide.style.display = 'block'
 
         const inicio = innerWidth
-        const fim = -slide.clienteWidth
+        const fim = -slide.clientWidth
 
         slide.style.left = `${inicio}px` 
 
@@ -36,12 +36,5 @@ function mover(elem, inicio, fim, passo, callback){
     
     slider()
 
-    // const p = document.querySelector('[wm-slider] > p')
-    // p.style.display = 'block'
-
-    // mover(p, 1500, -400, 5, () =>{
-    //     console.log('Terminou!!')
-    // })
-
-
+    
 
