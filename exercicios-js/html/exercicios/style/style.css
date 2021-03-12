@@ -4,6 +4,11 @@
     left: 0;
 }
 
+/* Conteudo para abrir o Ajax */
+#conteudo{
+    padding: 30px 30px;
+}
+
 #noticia{
     position: absolute;
     top: 1000px;
@@ -45,4 +50,32 @@ tfoot{
 
 input[type=radio],input[type=checkbox]{
     display: inline;    
+}
+
+/* Imagens */
+
+.cidade{
+    width: 513px;
+    height: 342px;    
+    background-image: url('http://files.cod3r.com.br/curso-web/imagem4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+
+.texto{
+    width: 400px;
+}
+
+.texto img{
+  margin-right: 10px;
+}
+
+.circular{
+    width: 513px;
+    background-color: #444;    
+}
+
+.wm-slider p{
+    position: absolute;
 }
