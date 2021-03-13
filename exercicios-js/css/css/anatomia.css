@@ -5,12 +5,12 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     width: calc(100% - 100px);
-    background-color: rgb(34, 150, 130);
+    background-color: rgb(36, 160, 139);
     font-weight: bold;
 }
 
 .selector:hover{
-    background-color: rgb(167, 165, 165);
+    background-color: rgb(238, 157, 157);
     cursor: pointer;
     
 }
