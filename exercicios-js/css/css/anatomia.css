@@ -1,0 +1,20 @@
+.selector{
+    color: #444;
+    font-size: 30px;
+    border: solid 5px navy;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: calc(100% - 100px);
+    background-color: rgb(34, 150, 130);
+    font-weight: bold;
+}
+
+.selector:hover{
+    background-color: rgb(167, 165, 165);
+    cursor: pointer;
+    
+}
+
+.selector::first-letter{
+    font-size: 50px;
+}
