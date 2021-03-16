@@ -1,0 +1,16 @@
+p{
+    background-color: #aaa;
+}
+
+.observacao{
+    background-color: #5f5;
+    border: dashed 5px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+p.observacao{   
+    padding: 5px; 
+    background: linear-gradient(to right, red, orange, yellow);
+}

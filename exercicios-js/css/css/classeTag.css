@@ -1,5 +1,23 @@
+
+/* [feira*=sa]{
+    background-color: red;
+} */
+
+/* span:nth-child(1){
+    background-color: violet;
+} */
+
+/* section > :nth-child(odd){
+    background-color: violet;
+} */
+
+/* section > :nth-child(odd), ul, p{
+    background-color: violet;
+} */
+
 body{
     font-size: 40px;
+    background-color: #212121;
 }
 
 ul, ol{
@@ -13,6 +31,8 @@ li{
 .tag{
     border: solid 4px;
     margin: 5px;    
+    color: #fff;
+    font-weight: bold;
 }
 
 .tag label{
