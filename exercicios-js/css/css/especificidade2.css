@@ -1,0 +1,27 @@
+body{
+    font-size: 40px;    
+}
+
+div{
+    background-color: #00b;
+    color: #fff;
+}
+
+div[wm-cor]{
+    background-color: coral;
+}
+
+
+div.estilo{
+    background-color: goldenrod;
+}
+
+#unico1, #unico2{
+    background-color: #000;
+}
+
+div:hover, #unico1:hover{
+    background-color: purple;
+    cursor: pointer;
+}
+
