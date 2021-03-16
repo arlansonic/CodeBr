@@ -1,0 +1,13 @@
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 40px;
+    border: solid 3px purple;
+    padding: 50px;
+}
+
+div{
+    border: inherit;
+    padding: inherit;
+}
+
+/* Inherit - Herdar */
