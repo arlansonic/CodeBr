@@ -17,8 +17,9 @@ span {
 }
 
 span, div{
-    width: 50%;
+    width: 25%;
     height: 250px;
-    height: 50%;
-    display: block;
+    height: 25%;
+    display: inline-block;    
+    margin: 5px;
 }
