@@ -19,4 +19,5 @@
     position: relative; /*Vai ocupar apenas o espaço do conteudo*/
     position: absolute; /*Vai ocupar o contaudo + Padding*/
     position: fixed; /* Via pegar pelo ViewPort*/
+    
 }
