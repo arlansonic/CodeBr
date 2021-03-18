@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.fora{
+    position: relative;
+    background-color: orange;
+    height: 400px;
+    width: 400px;
+    padding: 50px;
+}
+
+.dentro{
+    background-color: orchid;
+    height: 100px;
+    width: 100%;
+    position: static; /*Vai ocupar apenas o espaço do conteudo*/
+    position: relative; /*Vai ocupar apenas o espaço do conteudo*/
+    position: absolute; /*Vai ocupar o contaudo + Padding*/
+    position: fixed; /* Via pegar pelo ViewPort*/
+}
