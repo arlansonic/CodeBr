@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container div{
+    flex-basis: 100px; /*Ajuste de largura em um Container - com Display Flex*/
+    text-align: center;
+    width: 200px; /*Vai perder*/
+}
+
+.flex-container div:nth-child(4){
+    /*Grow | Shrink | Basis*/
+    flex: 3 6 100px;
+}
+
+.flex-container{
+    width: 300px;
+    width: 600px;
+}
