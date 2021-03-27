@@ -22,6 +22,7 @@ ajax({
     url: "dados/estados.xml",
     metodo: "get",
     sucesso(resposta){
+        console.log(resposta)
         const estados = resposta.getElementsByTagName('estado')
         const itens = Array.from(estados).reduce(
             (html, estado) => html + `<li>${estado.attributes.nome.value}</li>`, ''
