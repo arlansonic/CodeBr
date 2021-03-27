@@ -4,6 +4,7 @@ const multer = require('multer') //Para fazer upload de arquivos
 const app = express()
 
 app.use(express.static('.'))
+// Para interpretar o envio de formulário
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
@@ -33,6 +34,15 @@ app.post('/upload', (req, res) => {
     
 })
 
+// Para pegar o formulario da aula FETCH 02.
+
+app.post('/formulario',(req, res) => {
+    // Crete Object
+    res.send({
+        ...req.body,
+        id:1
+    })
+})
 
 
 // app.get('/teste', (req, res) => res.send('Ok'))
