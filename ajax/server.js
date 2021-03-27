@@ -44,6 +44,18 @@ app.post('/formulario',(req, res) => {
     })
 })
 
+app.get('/parOuImpar', (req, res) => {
+    /*Pegar do FrontEnd */
+    // req.body
+    // req.query
+    // req.params
+
+    const par = parseInt(req.query.numero) % 2 === 0
+    res.send({
+        resultado: par ? 'par' : 'impar'
+    })
+})
+
 
 // app.get('/teste', (req, res) => res.send('Ok'))
 app.listen(8080, () => console.log('Server Executando........'))
