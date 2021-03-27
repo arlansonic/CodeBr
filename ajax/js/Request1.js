@@ -16,21 +16,19 @@ function ajax(config){
         xhr.send()
 }
 
-function createTable(estados){
-    
-        
+function createTable(estados){          
 
             const linhas = estados.map(estado => {
-            const tdId = document.createElement('td')
-            tdId.innerHTML = estado.id
+                const tdId = document.createElement('td')
+                tdId.innerHTML = estado.id
 
-            const tdNome = document.createElement('td')            
-            tdNome.innerHTML = estado.nome
+                const tdNome = document.createElement('td')            
+                tdNome.innerHTML = estado.nome
 
-            const tdSigla = document.createElement('td')
-            tdSigla.innerHTML = estado.sigla
+                const tdSigla = document.createElement('td')
+                tdSigla.innerHTML = estado.sigla
 
-            const tr = document.createElement('tr')
+                const tr = document.createElement('tr')
 
             tr.appendChild(tdId)
             tr.appendChild(tdNome)
