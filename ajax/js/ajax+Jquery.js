@@ -6,7 +6,7 @@ function exibirResultado(id, dados){
 $.ajax({
     url: 'parOuImpar',
     data:{
-        numero: 6
+        numero: 9
     },
     success(data){
         exibirResultado('get', data)
