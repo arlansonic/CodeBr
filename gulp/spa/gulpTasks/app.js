@@ -34,6 +34,11 @@ function appIMG(callback){
         .pipe(gulp.dest('build/assets/imgs'))
 }
 
+gulp.task('appHTML', appHTML) //Tem que usar a Task para ser feito o upload realtime nas alterações e atualizar todo o HTML
+gulp.task('appCSS', appCSS)
+gulp.task('appJS', appJS)
+gulp.task('appIMG', appIMG)
+
 module.exports = {
     appHTML,
     appCSS,
