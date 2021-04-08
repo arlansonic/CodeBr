@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
     mode: modoDev ? 'development' : 'production', //Developmet or Production
@@ -13,10 +14,7 @@ module.exports = {
     },
     optimization:{
         minimizer:[
-            new UglifyJsPlugin({
-                parallel: true,
-                parallel: true
-            }),
+            
             new OptimizeCSSAssetsPlugin({})
         ]
     },
@@ -35,6 +33,9 @@ module.exports = {
                 'css-loader', //Interpreta - @import, url()........
                 'sass-loader',
             ]
+        },{
+            test: /\.(png|svg|jpg|gif)$/,
+            use: ['file-loader']
         }]
     }
 }
