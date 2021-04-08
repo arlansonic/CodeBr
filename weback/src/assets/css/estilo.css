@@ -4,11 +4,11 @@
 }
 
 body{
-    background-color: #444;
+    background-color: indigo;
     background-image: url(../imgs/logo.png);
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 100vh;    
 }
 
 h1{
