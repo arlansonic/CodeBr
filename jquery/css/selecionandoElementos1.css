@@ -1,0 +1,15 @@
+.negrito {
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form select,
+form button {
+    margin: 10px;
+    font-size: 1.6em;
+}
