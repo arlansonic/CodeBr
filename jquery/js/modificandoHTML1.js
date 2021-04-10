@@ -23,3 +23,4 @@ $('#conteudo3').append(['<h1>1</h1>', '<h1>2</h1>'])
 
     // Alterando Todos
     $('div[id]').html('<strong>Todos!</strong>') //Tem prioridade maior, pois altera todos que tiverem DIV
+    

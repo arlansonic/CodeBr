@@ -78,3 +78,16 @@ li {
     color: greenyellow;
     font-weight: bold;
 }
+
+.wrapper{
+    display: flex;
+    padding: 15px;        
+    flex-direction: row-reverse;    
+    align-items: center;        
+    height: 300px;            
+}
+
+
+
+
+
