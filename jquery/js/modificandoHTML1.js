@@ -1,3 +1,9 @@
+// Wrapper
+const flex =  {'display': 'flex'}
+const align = {'align-items': 'center'}
+$('.wrapper').append('Home').css(flex).css(align)
+
+
 // Conteudo 1
 $('#conteudo1').append('<p>1</p>')
 
@@ -22,5 +28,6 @@ $('#conteudo3').append(['<h1>1</h1>', '<h1>2</h1>'])
     $('#conteudo3').text('<h1>123</h1>')
 
     // Alterando Todos
-    $('div[id]').html('<strong>Todos!</strong>') //Tem prioridade maior, pois altera todos que tiverem DIV
-    
+    $('div[id]').html('<strong>Teste</strong>') //Tem prioridade maior, pois altera todos que tiverem DIV
+
+
