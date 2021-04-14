@@ -1,0 +1,9 @@
+[wm-relogio] {
+    text-align: center;
+}
+
+[wm-relogio] button {
+    font-size: 1.6em;
+    padding: 0px 25px;
+    margin: 10px;
+}

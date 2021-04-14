@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: indigo;
+    background-image: url(../imgs/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;    
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-weight: bold;
+}
+
