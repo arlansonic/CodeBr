@@ -1,0 +1,14 @@
+body {
+    position: relative;
+    background-color: #999;
+    color: #000;
+}
+
+div {
+    position: absolute;
+    display: inline;
+    border: solid 10px #000;
+    padding: 50px;
+    font-size: 3em;
+    background-color: crimson;
+}
