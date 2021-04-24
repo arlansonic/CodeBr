@@ -10,3 +10,4 @@ import 'bootstrap'
 // Arquivos JavaScript
 
 import './js/core/includes'
+import './js/core/plugins/cityButtons'
