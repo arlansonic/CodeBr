@@ -7,6 +7,7 @@ import { BoaNoite, BoaTarde } from './componentes/Multiplos' //Forma 1 de Export
 import Multi from './componentes/Multiplos' //Forma 2 de Exportar
 import Saudacao from './componentes/Saudacao'
 import Pai from './componentes/Pai'
+import Filho from './componentes/Filho'
 
 // const elemento = <h1>React</h1>
 // const elem = <h1>React 02</h1>
@@ -52,6 +53,10 @@ ReactDom.render(
 
 ReactDom.render(
     <div>
-        <Pai nome="Arlan" sobrenome="Marreiro" />
+        <Pai nome="Arlan" sobrenome="Marreiro" >
+            <Filho nome="Apollo"/>
+            <Filho nome="Hero"/>
+            <Filho nome="Maria Katiane"/>
+        </Pai>
     </div>
-    , document.getElementById('root'))
+    ,document.getElementById('root'))
