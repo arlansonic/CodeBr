@@ -6,6 +6,7 @@ import MinisterioDaFazenda from './componentes/MinisterioDaFazenda'
 import { BoaNoite, BoaTarde } from './componentes/Multiplos' //Forma 1 de Exportar
 import Multi from './componentes/Multiplos' //Forma 2 de Exportar
 import Saudacao from './componentes/Saudacao'
+import Pai from './componentes/Pai'
 
 // const elemento = <h1>React</h1>
 // const elem = <h1>React 02</h1>
@@ -38,8 +39,19 @@ ReactDom.render(
 
  */
 
+/**
+
 ReactDom.render(
     <div>
         <Saudacao tipo="Bom Dia" nome="Arlan Marreiro" idade={26} />
     </div>
 ,document.getElementById('root'))
+
+ */
+
+
+ReactDom.render(
+    <div>
+        <Pai nome="Arlan" sobrenome="Marreiro" />
+    </div>
+    , document.getElementById('root'))
