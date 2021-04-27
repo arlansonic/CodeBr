@@ -40,6 +40,6 @@ ReactDom.render(
 
 ReactDom.render(
     <div>
-        <Saudacao tipo="Bom Dia" nome="Arlan Marreiro" idade={26}/>
+        <Saudacao tipo="Bom Dia" nome="Arlan Marreiro" idade={26} />
     </div>
 ,document.getElementById('root'))
