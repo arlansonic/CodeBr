@@ -13,8 +13,14 @@ export default props =>
     <div className="app">
         <Logo />
         <Nav />
-        <Header/>
+        <Header />
         <Main icon="home" title="Home"
-        subtitle="Segundo Projeto de React"/>
+            subtitle="Segundo Projeto de React" >
+            <div className="display-4">Bem Vindo!</div>
+            <hr/>
+            <p className="mb-0">Sistema para exemplificar a construção de um cadastro
+            desenvolvido em React!
+            </p>
+        </Main>
         <Footer />
     </div>
