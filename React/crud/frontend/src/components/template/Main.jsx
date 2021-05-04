@@ -4,9 +4,8 @@ import Header from './Header'
 
 export default props =>
     <React.Fragment>
-        <header>
+        <Header {...props}/>
             <main className="content">
                 Conteudo
-        </main>
-        </header>
+        </main>        
     </React.Fragment>
