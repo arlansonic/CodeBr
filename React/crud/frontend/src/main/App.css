@@ -41,7 +41,7 @@ body{
     height: 100vh;        
 }
 
-aside.logo{
+aside.Logo{
     grid-area: logo;
 }
 
