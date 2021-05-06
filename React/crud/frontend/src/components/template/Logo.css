@@ -16,7 +16,7 @@ aside.Logo img {
     }
 }
 
-@medi(max-widht: 375px) {
+@media(max-widht: 375px) {
     aside.logo img {
         width: 350px
     }
