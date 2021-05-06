@@ -1,25 +1,9 @@
 {
   "user": [
     {
-      "id": 2,
-      "nome": "Apollo Henrique",
-      "email": "apollo.marreiro@gmail.com",
-      "name": "Apollo Henrique"
-    },
-    {
-      "name": "Arlan Marreiro",
+      "name": "Arlan  Marreiro de Souza Nascimento",
       "email": "arlan.marreiro@gmail.com",
-      "id": 3
-    },
-    {
-      "name": "teste",
-      "email": "teste",
-      "id": 4
-    },
-    {
-      "name": "teste",
-      "email": "teste",
-      "id": 5
+      "id": 1
     }
   ]
 }

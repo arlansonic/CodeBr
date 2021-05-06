@@ -1,12 +1,23 @@
-aside.Logo{
+aside.Logo {
     background-color: var(--bg-dark);
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-aside.Logo img{
+aside.Logo img {
     padding: 0px 15px;
-    width: 100%;    
+    width: 100%;
+}
+
+@media(max-widht: 676px) {
+    aside.logo img {
+        width: 350px;
+    }
+}
+
+@medi(max-widht: 375px) {
+    aside.logo img {
+        width: 350px
+    }
 }
