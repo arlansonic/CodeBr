@@ -4,6 +4,11 @@
       "name": "Arlan  Marreiro de Souza Nascimento",
       "email": "arlan.marreiro@gmail.com",
       "id": 1
+    },
+    {
+      "name": "Teste",
+      "email": "teste@teste.com",
+      "id": 2
     }
   ]
 }
