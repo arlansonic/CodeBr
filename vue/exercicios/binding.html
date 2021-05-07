@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Binding</title>
     <link rel="stylesheet" href="/css/estilo.css">
     <script src="/js/vue.min.js"></script>
 </head>
-<body class="exercicio">
 
-    <script>
-        // ...
-    </script>
+<body class="exercicio">
+    <div id="app">
+        <p>{{link}}</p>
+        <p>
+            <a href="{{link}}">Canal Youtube</a>
+        </p>
+        <p>
+            <a v-bind:href="link">Usando v-bind: Youtube</a>
+        </p>
+        <p>
+            <a :href="link">Usando somente : Youtube </a>
+        </p>
+        <p>
+            <input type="text" v-model="nome">
+            <!--v-model atualiza em 2 direções-->
+            <span>{{nome}}</span>
+        </p>
+    </div>
+
 </body>
+<script src="./js/binding.js"></script>
+
 </html>
