@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Eventos</title>
     <link rel="stylesheet" href="/css/estilo.css">
     <script src="/js/vue.min.js"></script>
 </head>
-<body class="exercicio">
 
-    <script>
-        // ...
-    </script>
+<body class="exercicio">
+    <div id="app">
+        <p>{{contador}}</p>
+        <p><button v-on:click="add">+1</button></p>
+        <!--usando 'v-on'-->
+        <p><button @click="contador -= 2">-2</button></p>
+        <!-- usando @ -->
+        <p @mousemove="atualizarPosicao"> Coordenadas: {{x}} e {{y}}
+            <span @mousemove.stop>Aqui não</span>
+        </p>
+        <p>
+            <input type="text" @keyup.enter="alerta">
+        </p>
+    </div>
 </body>
+
+<script src="./js/eventos.js"></script>
+
 </html>
