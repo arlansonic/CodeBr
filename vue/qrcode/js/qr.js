@@ -2,6 +2,7 @@ new Vue({
     el: "#app",
     data:{
         title: "Gerador QrCode",
+        subtitle: "ICCT",
         text: "http://10.58.64.185:8081/workshop/php/view/LOGIN/",
         qrcode: new QRious({size: 300})
     },
@@ -16,4 +17,5 @@ new Vue({
     //         this.text = event.target.value
     //     }
     }
+    
 })

@@ -12,13 +12,14 @@
 <body>
     <div id="app">
         <h1>{{title}}</h1>
+        <h2>{{subtitle}}</h2>
         <div>
             <input type="text" size="25" placeholder="Digite para Gerar..." v-model="text">
         </div>
         <div v-if="text" class="output">
             <img :src="newQRCode" alt="QRCode">
         </div>
-    </div>
+    </div>    
 </body>
 <script src="./js/qr.js"></script>
 
