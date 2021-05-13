@@ -21,13 +21,13 @@ new Vue({
                 .then(data => this.sales = data) //console.log(data) - para checar se ta puxando
         },
 
-        calculateTotal(sales) {
+        calculateTotal(sales) { //Fazer o calculo total de todos os registros
             if (!sales) return 0
             return sales.reduce((total, sale) => total + sale.value, 0)
         }
     },
     computed: {
-        salesByProduct() {
+        salesByProduct() { //Organizar por produtos e fazer o calculo de todos os valores
             if (!this.sales) return null
 
             const salesByProduct = this.sales.reduce((grouped, sale) => {
