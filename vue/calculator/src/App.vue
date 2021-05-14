@@ -43,4 +43,8 @@ body {
     #185a9d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+h1{
+  padding: 40px 0;
+}
 </style>
