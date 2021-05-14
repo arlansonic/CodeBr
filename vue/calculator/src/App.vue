@@ -36,13 +36,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
-  background: #42b983; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #42b983,
-    #1d976c
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  color: #fff;  
   background: linear-gradient(
     to bottom,
     #43cea2,
