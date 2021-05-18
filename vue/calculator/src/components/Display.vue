@@ -22,4 +22,7 @@ props: ['value']
   font-size: 2.1em;
   overflow: hidden;
   }
+
+  
+
 </style>
