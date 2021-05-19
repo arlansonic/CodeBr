@@ -1,12 +1,16 @@
 <template>
   <div id="app">
       <h1>Problema de Monty Hall</h1>
+      <Gift/>
   </div>
 </template>
 
 <script>
-export default {
+import Gift from './components/Gift'
 
+export default {
+    name: 'App',
+    components: { Gift}
 }
 </script>
 
@@ -30,12 +34,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
 }
 
 #app h1{
     border: 1px solid #000;
     background-color: #004;
     padding: 20px;    
-    margin-top: 20px;
+    margin-bottom: 40px;
 }
 </style>
