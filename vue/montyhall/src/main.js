@@ -7,3 +7,10 @@ new Vue({
     //     return createElement(App)
     // }
 }).$mount("#app")
+
+// let exemplo2 = new Vue({
+//     el: '#exemplo-2',
+//     data: {
+//         name: 'Teste'
+//     }
+// })

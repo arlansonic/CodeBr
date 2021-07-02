@@ -4,7 +4,8 @@
       <Gift v-if="open && hasGift" />
       <div class="door" :class="{ open }" @click="selected = !selected">
         <div class="number" :class="{ selected }">{{ number }}</div>
-        <div class="knob" :class="{ selected }" @click.stop="open = true"></div>
+        <div class="knob" :class="{ selected }" @click.stop="open = true" @click:teste="success" ></div>
+
       </div>
     </div>
   </div>
@@ -24,7 +25,14 @@ export default {
     return {
       open: false,
       selected: false,
+      success:'Parabéns Porta Premiada'
     };
+  },
+  methods: {
+    teste: function (event) {
+      alert(this.success);
+      return event;
+    },
   },
 };
 </script>
