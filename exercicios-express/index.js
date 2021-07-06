@@ -1,10 +1,13 @@
+const { urlencoded } = require('body-parser')
 const express = require('express')
 const app = express()
-
 const saudacao = require('./saudacaoMid')
 
-app.use(saudacao('Arlan Marreiro'))
+app.use(express.text())
+app.use(express.json())
+app.use(urlencoded({ extended: true }))
 
+app.use(saudacao('Arlan Marreiro'))
 
 app.get('/api', (req, res, next) => {
     console.log('Antes...')
@@ -17,21 +20,23 @@ app.get('/clientes/relatorio', (req, res) => {
 
 
 app.post('/corpo', (req, res) => {
-    let corpo = ''
-    req.on('data', function(parte) {
-        corpo += parte
-    })
+    // let corpo = ''
+    // req.on('data', function(parte) {
+    //     corpo += parte
+    // })
 
     // Mandar em formato de Texto
-    req.on('end', function() {
-        res.send(corpo)
-    })
+    // req.on('end', function() {
+    //     res.send(corpo)
+    // })
 
     // Mandar em formato JSON
 
     // req.on('end', function() {
     //     res.json(JSON.parse(corpo))
     // })
+
+    res.send(req.body)
 })
 
 
