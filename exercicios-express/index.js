@@ -2,6 +2,10 @@ const { urlencoded } = require('body-parser')
 const express = require('express')
 const app = express()
 const saudacao = require('./saudacaoMid')
+const usuarioApi = require('./api/usuario')
+
+app.post('/usuario', usuarioApi.salvar)
+app.get('/usuario', usuarioApi.obter)
 
 app.use(express.text())
 app.use(express.json())
