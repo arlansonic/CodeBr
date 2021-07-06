@@ -6,9 +6,37 @@ const saudacao = require('./saudacaoMid')
 app.use(saudacao('Arlan Marreiro'))
 
 
-app.use('/api', (req, res, next) => {
+app.get('/api', (req, res, next) => {
     console.log('Antes...')
     next()
+})
+
+app.get('/clientes/relatorio', (req, res) => {
+    res.send(`Cliente Relatório: completo = ${req.query.completo} ano = ${req.query.ano}`)
+})
+
+
+app.post('/corpo', (req, res) => {
+    let corpo = ''
+    req.on('data', function(parte) {
+        corpo += parte
+    })
+
+    // Mandar em formato de Texto
+    req.on('end', function() {
+        res.send(corpo)
+    })
+
+    // Mandar em formato JSON
+
+    // req.on('end', function() {
+    //     res.json(JSON.parse(corpo))
+    // })
+})
+
+
+app.get('/clientes/:id', (req, res) => {
+    res.send(`Cliente: ${req.params.id} selecionado!`)
 })
 
 app.get('/api', (req, res, next) => {
