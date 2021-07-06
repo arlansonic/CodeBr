@@ -3,6 +3,8 @@ const express = require('express')
 const app = express()
 const saudacao = require('./saudacaoMid')
 const usuarioApi = require('./api/usuario')
+const produtoApi = require('./api/produto')
+produtoApi(app, ' Com Parametros!')
 
 app.post('/usuario', usuarioApi.salvar)
 app.get('/usuario', usuarioApi.obter)
